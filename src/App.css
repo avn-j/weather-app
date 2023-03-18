@@ -61,7 +61,6 @@
 	height: calc(100vh - 100px);
 	overflow-y: auto;
 	overflow-x: auto;
-	width: 100%;
 }
 
 .saved-cities-container-no-weather {

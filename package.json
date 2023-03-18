@@ -1,6 +1,6 @@
 {
 	"name": "react-weather-app",
-	"homepage": "https://avn-j.io/weather-app",
+	"homepage": "https://avn-j.io/demo/weather-app",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
