@@ -1,0 +1,78 @@
+.weather-container {
+	margin-top: 2rem;
+	border-radius: 10px;
+	background-color: rgb(251, 251, 251);
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	padding: 0 1rem;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+}
+
+.weather-container:hover {
+	background-color: rgb(229, 226, 255);
+	box-shadow: rgba(149, 157, 165, 0.397) 0px 8px 24px;
+}
+
+.weather-details-top,
+.weather-details-bottom {
+	display: flex;
+	align-items: center;
+}
+
+.weather-details-top {
+	justify-content: space-between;
+}
+
+.weather-description {
+	margin: 0;
+}
+
+.city {
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 0rem;
+	overflow-wrap: break-word;
+}
+
+.weather-icon {
+	height: 100px;
+}
+
+.temperature {
+	font-size: 3rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.left-container {
+	margin-right: 1rem;
+	text-align: right;
+}
+
+.saved-remove-city-button {
+	background: none;
+	margin: 1rem 0;
+	font-family: 'Nunito';
+	font-size: 1rem;
+	border: none;
+	cursor: pointer;
+	font-weight: 700;
+	background-color: rgb(130, 151, 235);
+	color: white;
+	padding: 0.25rem 0.75rem;
+	border-radius: 20px;
+}
+
+.saved-remove-city-button:hover {
+	background-color: rgb(146, 164, 235);
+}
+
+@media screen and (max-width: 1650px) {
+	.saved-cities-container .weather-container {
+		width: 200px;
+	}
+}

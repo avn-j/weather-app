@@ -1,0 +1,150 @@
+.App {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* Top Bar */
+
+.top-bar {
+	justify-content: space-between;
+	color: rgb(82, 80, 167);
+	width: 60%;
+	display: flex;
+	align-items: center;
+}
+
+.top-bar div[data-value] {
+	color: rgb(110, 108, 172);
+}
+
+.app-title {
+	font-weight: 600;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.search {
+	width: 600px;
+}
+
+/* Content */
+
+.content {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	margin-top: 1rem;
+}
+
+.error {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	background-color: rgb(245, 245, 245);
+	color: rgb(73, 73, 73);
+	padding: 0.1rem 1rem;
+	margin-bottom: 2rem;
+	border-radius: 5px;
+	border-left: rgb(235, 59, 59) 10px solid;
+}
+
+.error h3 {
+	margin-bottom: 0rem;
+	font-weight: bold;
+}
+
+.top {
+	width: 100%;
+}
+
+.saved-cities-container {
+	height: calc(100vh - 100px);
+	overflow-y: auto;
+	overflow-x: auto;
+	width: 100%;
+}
+
+.saved-cities-container-no-weather {
+	display: flex;
+	align-items: center;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.saved-cities-container-no-weather .weather-container {
+	margin: 1rem;
+}
+
+.loading-details {
+	display: flex;
+	flex-direction: column;
+	color: #8297eb;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.loading-icon {
+	height: 45px;
+}
+
+@media screen and (max-width: 1650px) {
+	.content {
+		flex-direction: column;
+	}
+
+	.saved-cities-container {
+		overflow-y: visible;
+		height: auto;
+		display: flex;
+	}
+
+	.saved-cities-container .weather-container {
+		overflow-y: visible;
+		height: auto;
+		margin: 1rem;
+	}
+}
+
+@media screen and (max-width: 1340px) {
+	.top-bar {
+		flex-direction: column;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.content {
+		flex-direction: column;
+	}
+
+	.search {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.content {
+		width: 100%;
+	}
+
+	.saved-cities-container-no-weather {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.saved-cities-container-no-weather > .weather-container {
+		height: auto;
+		margin: 1rem;
+	}
+
+	.saved-cities-container {
+		overflow-x: auto;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.saved-cities-container-no-weather {
+		flex-direction: column;
+		margin: 1rem 0;
+	}
+}

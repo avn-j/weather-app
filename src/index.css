@@ -1,0 +1,11 @@
+body {
+	font-family: 'Nunito', 'Roboto', Arial !important;
+	background: rgb(228, 233, 255);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
